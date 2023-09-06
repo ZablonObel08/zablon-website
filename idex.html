@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png.png" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                                <li><a href="#">Services</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Software Designer</p>
+                    <h1>Hi, I'm <span>Zablon</span> <br> Obel From Kenya</h1>
+                </div>
+            </div>
+        </div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/About.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>	Enthusiastic on modern computers technology, improving information & communication sector through computer simulation.
+                    	Able to learn and work under minimal supervision.
+                    	I love challenges especially if they will lead me to knowing or discovering something new
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="Experience">
+                        <ul>
+                            <li><span>2021-Current</span><br>UI/UX Design Training at ET institute </li>
+                            <li><span>2019-2021</span><br>Team lead at StarAppLLC.</li>
+                            <li><span>2017-2019</span><br>UI/UX Design Executive at coin Digital ltd.</li>
+                            <li><span>2016-2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab " id="Education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2016</span><br>MBA from MIT Bangalore</li>
+                            <li><span>2014</span><br>BBA from ISM Bangalore</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    var tablinks= document.getElementByClassName("tab-links");
+    var tablinks= document.getElementByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+           tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+           tabcontent.classlist.remove("active-tab");
+        }
+    }
+    event.currentTarget.classlist.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+</script>
+                    
+    </body>
+</html> 
